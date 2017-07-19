@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   	selector: 'tree-node',
   	template : `
   		<div *ngFor="let node of node.children" [class]="node.layout">
-			{{node.name}}
+			<div>{{node.name}}</div>
 			<tree-node  [node]="node"></tree-node>	
 		</div>`,
 	styles: [`
