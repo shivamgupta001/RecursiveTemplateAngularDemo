@@ -6,5 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+	constructor() {}
+
+	node = {
+		name: 'root', 
+		children: [
+	    	{	
+	    		name: 'a', 
+	    		children: [
+		    		{	name: 'a', children: []},
+		    		{	name: 'b', children: []},
+		    		{	
+		    			name: 'c', 
+		    			children: [
+		      				{	name: 'd', children: []},
+		      				{	name: 'e', children: []},
+		      				{	name: 'f', children: []},
+		     			]
+		     		}
+		     	]
+		    },
+	    	{name: 'b', children: []},
+	    	{
+	    		name: 'c', 
+	    		children: [
+	      			{name: 'd', children: []},
+	      			{name: 'e', children: []},
+	      			{name: 'f', children: []},
+	     		]
+	     	}
+		]
+	};  
 }
