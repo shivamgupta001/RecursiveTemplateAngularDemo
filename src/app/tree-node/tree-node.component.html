@@ -1,5 +1,6 @@
-<ul>
-	<li *ngFor="let node of node.children">{{node.name}}
-		<tree-node [node]="node"></tree-node>
-	</li>
-</ul>
+<div *ngFor="let node of node.children">
+	{{node.name}}
+	<tree-node  [node]="node"></tree-node>	
+</div>
+
+

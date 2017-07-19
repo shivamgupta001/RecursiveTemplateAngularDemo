@@ -10,30 +10,34 @@ export class AppComponent {
 	constructor() {}
 
 	node = {
-		name: 'root', 
+		name: 'root',
+		layout : 'column', 
 		children: [
 	    	{	
-	    		name: 'a', 
+	    		name: 'a',
+	    		layout : 'row', 
 	    		children: [
-		    		{	name: 'a', children: []},
-		    		{	name: 'b', children: []},
+		    		{	name: 'a', children: [] },
+		    		{	name: 'b', children: [] },
 		    		{	
-		    			name: 'c', 
+		    			name: 'c',
+		    			layout : 'column', 
 		    			children: [
-		      				{	name: 'd', children: []},
-		      				{	name: 'e', children: []},
-		      				{	name: 'f', children: []},
+		      				{	name: 'd', children: [] },
+		      				{	name: 'e', children: [] },
+		      				{	name: 'f', children: [] },
 		     			]
 		     		}
 		     	]
 		    },
-	    	{name: 'b', children: []},
+	    	{name: 'b', children: [] },
 	    	{
-	    		name: 'c', 
+	    		name: 'c',
+	    		layout : 'row', 
 	    		children: [
-	      			{name: 'd', children: []},
-	      			{name: 'e', children: []},
-	      			{name: 'f', children: []},
+	      			{name: 'd', children: [] },
+	      			{name: 'e', children: [] },
+	      			{name: 'f', children: [] },
 	     		]
 	     	}
 		]
